@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodiQ - Quizzes</title>
+    <link rel="stylesheet" href="./style3.css">
+</head>
+<body>
+    <!-- Toggle Button -->
+    <button id="sidebar-toggle">☰</button>
+
+    <div class="quizzes-page">
+        <!-- Vertical Sidebar -->
+        <div class="sidebar">
+            <h3>Select Language</h3>
+            <ul>
+                <li><button class="language-btn" data-language="python">Python</button></li>
+                <li><button class="language-btn" data-language="javascript">JavaScript</button></li>
+                <li><button class="language-btn" data-language="html">HTML</button></li>
+                <li><button class="language-btn" data-language="css">CSS</button></li>
+            </ul>
+        </div>
+
+        <!-- Quiz Container -->
+        <div class="quiz-container">
+            <h2 id="quiz-title">Python Quiz</h2>
+            <div class="quiz-card">
+                <div class="question">
+                    <p id="question-text">What is the output of `print(2 + 2)`?</p>
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="answer" value="A"> 2</label>
+                    <label><input type="radio" name="answer" value="B"> 4</label>
+                    <label><input type="radio" name="answer" value="C"> 6</label>
+                    <label><input type="radio" name="answer" value="D"> 8</label>
+                </div>
+                <div class="navigation">
+                    <button id="prev-btn">Previous</button>
+                    <span id="question-counter">Question 1 of 10</span>
+                    <button id="next-btn">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link the JavaScript file -->
+    <script src="./main.js"></script>
+</body>
+</html>

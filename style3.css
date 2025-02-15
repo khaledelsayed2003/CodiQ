@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.quizzes-page {
+    display: flex;
+    min-height: 100vh;
+}
+#quiz-title{
+    padding-left: 30px;
+}
+/* Toggle Button */
+#sidebar-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it's above the sidebar */
+    transition: left 0.3s ease; /* Smooth transition for button position */
+}
+
+#sidebar-toggle:hover {
+    background-color: #0056b3;
+}
+
+/* Vertical Sidebar */
+.sidebar {
+    width: 250px; /* Full width of the sidebar */
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    padding-top: 60px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%); /* Hide sidebar by default */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+    position: fixed; /* Fix the sidebar to the left */
+    height: 100vh; /* Full height of the viewport */
+    z-index: 1000; /* Ensure sidebar is above other content */
+}
+
+.sidebar.visible {
+    transform: translateX(0); /* Slide sidebar in when visible */
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.language-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.language-btn:hover {
+    background-color: #004080;
+}
+
+/* Quiz Container */
+.quiz-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 20px 20px 20px; /* Default margin */
+    border-radius: 10px;
+    transition: margin 0.3s ease; /* Smooth transition for margin */
+}
+
+/* Adjust margin when sidebar is visible */
+.sidebar.visible ~ .quiz-container {
+    margin-left: 270px; /* Move content to the right when sidebar is visible */
+}
+
+.quiz-card {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quiz-card h2 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.options label {
+    display: block;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options label:hover {
+    background-color: #ddd;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navigation button:hover {
+    background-color: #0056b3;
+}
+
+#question-counter {
+    font-size: 1rem;
+    color: #555;
+}

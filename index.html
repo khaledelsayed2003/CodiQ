@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Horizontal Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./Images/logo.png" alt="CodiQ Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li class="dropdown">
+                <a href="quizzes.html">Quizzes <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="quizzes.html?language=python">Python</a></li>
+                    <li><a href="quizzes.html?language=javascript">JavaScript</a></li>
+                    <li><a href="quizzes.html?language=html">HTML</a></li>
+                    <li><a href="quizzes.html?language=css">CSS</a></li>
+                </ul>
+            </li>
+            <li><a href="./About-Us.html">About Us</a></li>
+            <li><a href="tel:+905010823454">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Photo Slider -->
+    <section class="hero">
+        <div class="slider">
+            <div class="slide active">
+                <img src="./Images/recep-tayip.jpg" alt="Slide 1" >
+                <div class="slide-content">
+                    <h1>Welcome to CodiQ!</h1>
+                    <p>Test your coding skills with interactive quizzes.</p>
+                    <a href="quizzes.html" class="btn-primary">Get Started</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./Images/logo.png" alt="Slide 2">
+                <div class="slide-content">
+                    <h1>Learn Python, JavaScript, and More</h1>
+                    <p>Choose from a variety of programming languages.</p>
+                    <a href="quizzes.html" class="btn-primary">Explore Quizzes</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./Images/ZEYAD-ABOUELKASSEM-PP.png" alt="Slide 3">
+                <div class="slide-content">
+                    <h1>Track Your Progress</h1>
+                    <p>See how you're improving with detailed results.</p>
+                    <a href="quizzes.html" class="btn-primary">Start Now</a>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose CodiQ?</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <i class="fas fa-code"></i>
+                <h3>Interactive Quizzes</h3>
+                <p>Engage with hands-on quizzes that test your knowledge and help you learn faster.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Multiple Languages</h3>
+                <p>Choose from a variety of programming languages to test your skills.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Track Your Progress</h3>
+                <p>See how you're improving with detailed results and feedback.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p>"CodiQ helped me test my JavaScript skills in a fun way!"</p>
+                <span>recep tayyip erdoğan </span>
+            </div>
+            <div class="testimonial-card">
+                <p>"The quizzes are challenging and interactive. Highly recommended!"</p>
+                <span>Mohamed Allam</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"I love how I can track my progress and see my improvement over time."</p>
+                <span>Rana said</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 CodiQ. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/khaledelsayed2003"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Slider -->
+    <script src="./home.js"></script>
+</body>
+</html>
